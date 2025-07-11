@@ -1,0 +1,232 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &216347096509810861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5268139493616947166}
+  - component: {fileID: 3444594586317008690}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5268139493616947166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216347096509810861}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3444594586317008690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 216347096509810861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67082d107e48f4a4a96bba4ffc7908de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bgmClips:
+  - _name: BGM_Title
+    _clip: {fileID: 8300000, guid: 5b59f8de93b768a4292369e34f268eb9, type: 3}
+    _volume: 0.75
+    _pitch: 1
+  - _name: BGM_Opening
+    _clip: {fileID: 8300000, guid: 4384d3bc6aab6de42b851e03b79c4377, type: 3}
+    _volume: 0.5
+    _pitch: 1
+  - _name: BGM_InGame
+    _clip: {fileID: 8300000, guid: ea29cbbe476fda34aaad71fadfb2779f, type: 3}
+    _volume: 0.5
+    _pitch: 1
+  - _name: BGM_GameOver
+    _clip: {fileID: 8300000, guid: 27f462e8919a1c74ba0cb40621500c73, type: 3}
+    _volume: 0.75
+    _pitch: 1
+  - _name: BGM_FinalRush
+    _clip: {fileID: 8300000, guid: 19366d7b3e049fd4c80b03af98ee5435, type: 3}
+    _volume: 0.5
+    _pitch: 1
+  - _name: BGM_EndScene
+    _clip: {fileID: 8300000, guid: 997b3c4a05027694e8d488d60e00a57e, type: 3}
+    _volume: 0.5
+    _pitch: 1
+  _seClips:
+  - _name: SE_Enter
+    _clip: {fileID: 8300000, guid: 6dadafaf35d72d54fa5c16962c9db3b2, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Player_Like
+    _clip: {fileID: 8300000, guid: 9dd5f4a0f331e9346ad576b98230e3aa, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Player_Surprised
+    _clip: {fileID: 8300000, guid: bfaf510f8e2e1e141adf6411325bf3cb, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Enemy_Slime_Jump
+    _clip: {fileID: 8300000, guid: 296263949f9923640be57ebf0633ec3f, type: 3}
+    _volume: 0.75
+    _pitch: 1
+  - _name: SE_Enemy_Slime_Land
+    _clip: {fileID: 8300000, guid: c6da323d01933ff4dbffff0dfcf2fe1e, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_ChestOpen
+    _clip: {fileID: 8300000, guid: 5581aa6cabfb4d347bcf339dbb55653d, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Enemy_FlyEye_Attack
+    _clip: {fileID: 8300000, guid: 1c4bfd8cd5419474e91713dd0780faef, type: 3}
+    _volume: 0.75
+    _pitch: 1
+  - _name: SE_Enemy_FlyEye_Death
+    _clip: {fileID: 8300000, guid: 86802a907db256141b7f555fd032b87f, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Enemy_Mushroom_Attack
+    _clip: {fileID: 8300000, guid: 62a40369e98292b49a202011427419c3, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Enemy_Mushroom_Attack_Voice
+    _clip: {fileID: 8300000, guid: 55cd4e6f7051cba4d872314756820704, type: 3}
+    _volume: 0.5
+    _pitch: 1
+  - _name: SE_Enemy_Mushroom_Death
+    _clip: {fileID: 8300000, guid: 9e9aa772cccfd4247900f8080b801421, type: 3}
+    _volume: 0.5
+    _pitch: 1
+  - _name: SE_Enemy_Mushroom_Step
+    _clip: {fileID: 8300000, guid: b5fada3cb407e1b49918355475d4ca77, type: 3}
+    _volume: 0.75
+    _pitch: 1
+  - _name: SE_Enemy_Skeleton_Attack
+    _clip: {fileID: 8300000, guid: 76cc30841082dda44a07473cc84088fd, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Enemy_Skeleton_Death
+    _clip: {fileID: 8300000, guid: 7b650a6a5944ceb40ab93ee7d9d84666, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Enemy_Slime_Death
+    _clip: {fileID: 8300000, guid: 01b897b79bfd45a45b04ab7db6a3b599, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Enemy_Wizard_Death
+    _clip: {fileID: 8300000, guid: 042d276f35cc517428f559ab23c32418, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Enemy_Wizard_Death_Fall
+    _clip: {fileID: 8300000, guid: 98378fa7caed34d4eb1a1d1bb6f1d909, type: 3}
+    _volume: 0.5
+    _pitch: 1
+  - _name: SE_Enemy_Wizard_Shoot
+    _clip: {fileID: 8300000, guid: 88c0aee4e53dad141be3882ee1ea36c1, type: 3}
+    _volume: 0.75
+    _pitch: 1
+  - _name: SE_Enemy_Wizard_Teleport
+    _clip: {fileID: 8300000, guid: b502664360d7b5b4784e4c9d66cede3c, type: 3}
+    _volume: 0.5
+    _pitch: 1
+  - _name: SE_FinalRush
+    _clip: {fileID: 8300000, guid: 575aa762d036bfd4f9502c8ce9f11732, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_GuardHit
+    _clip: {fileID: 8300000, guid: f96ba9a470ec060448714fea2096948f, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Nothing
+    _clip: {fileID: 8300000, guid: 33ea01057f85909498aea3c6114f0287, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Player_Attack
+    _clip: {fileID: 8300000, guid: e44b00513abadbe41b882bec9c26bb65, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Player_Attack_Hit
+    _clip: {fileID: 8300000, guid: d6e61e444d05b40479d53c1acf3ce5c5, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Player_Damage
+    _clip: {fileID: 8300000, guid: 443d492e15ec158488c3f4d919ca176b, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Player_Death
+    _clip: {fileID: 8300000, guid: 0464c38e371a34d43af2b2a3aae0212c, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Player_Delighted
+    _clip: {fileID: 8300000, guid: 3f1f0d8f825e3494e87015072d113478, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Player_Grab
+    _clip: {fileID: 8300000, guid: 6f49e6c1b73f2e740a27d2423102325a, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Player_Sp01
+    _clip: {fileID: 8300000, guid: 26a0bfbd7b9be3c42aea65d8d86edc42, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Player_Sp01_Charge
+    _clip: {fileID: 8300000, guid: cd5e8cc28d4afb243b3f2504b7248fc9, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Player_Sp02_Charge
+    _clip: {fileID: 8300000, guid: 0b3aa30e00386244f8ca37eea6f818a8, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Player_Sp02_Charge_Voice
+    _clip: {fileID: 8300000, guid: 58ff961a3af59c74590fe831929631cb, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Player_Sp02_Slashes
+    _clip: {fileID: 8300000, guid: c18d1c5500a2ab340951a611c56f0577, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Player_Sp02_BigSlash
+    _clip: {fileID: 8300000, guid: dac2b4f04ddd47f4c80dba952bea6a9f, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_ToFinish
+    _clip: {fileID: 8300000, guid: 4076470e37a2e6648aa29181fda019ae, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_BattleStart
+    _clip: {fileID: 8300000, guid: fea7bf387a63653478ef02be56af1baf, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_GameClear
+    _clip: {fileID: 8300000, guid: 30bbfce704a5ba74985626a875ba851e, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Player_Sp01_NG
+    _clip: {fileID: 8300000, guid: 34759aac50c0f204289315f716efb85d, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Player_Embarrassed
+    _clip: {fileID: 8300000, guid: 35433497e371b0848955c034f38d248f, type: 3}
+    _volume: 1
+    _pitch: 1
+  - _name: SE_Good
+    _clip: {fileID: 8300000, guid: 1ca874b6bf38e6249bfe17ac1dc0fc4a, type: 3}
+    _volume: 1
+    _pitch: 1

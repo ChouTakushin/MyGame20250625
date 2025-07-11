@@ -32,8 +32,8 @@ public class TitleScreenMasterController : MonoBehaviour
         _pOpeningController = _playerGo.GetComponent<PlayerOpeningSceneContrller>();
         _sOpeningController = _slimeGo.GetComponent<SlimeOpeningSceneController>();
         AudioManager.Instance.PlayBGM("BGM_Title");
-        // セーブデータに「gameCleared」文字列が存在する場合、UIにcleared文字を表示する
-        if(PlayerPrefs.GetString("gameCleared") != null)
+        // セーブデータに「gameCleared」文字列が存在、かつ値が"YES"の場合、UIにcleared文字を表示する
+        if(PlayerPrefs.GetString("gameCleared") != null && PlayerPrefs.GetString("gameCleared") == "YES")
         {
             _cleardText.gameObject.SetActive(true);
         }

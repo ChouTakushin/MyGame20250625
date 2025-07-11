@@ -12,6 +12,7 @@ public class TitleScreenMasterController : MonoBehaviour
     [SerializeField] private GameObject _playerGo;
     [SerializeField] private GameObject _slimeGo;
     [SerializeField] private Image _uiImgBlackFull;
+    [SerializeField] private Text _cleardText;
     private PlayerOpeningSceneContrller _pOpeningController;
     private SlimeOpeningSceneController _sOpeningController;
 
@@ -31,6 +32,11 @@ public class TitleScreenMasterController : MonoBehaviour
         _pOpeningController = _playerGo.GetComponent<PlayerOpeningSceneContrller>();
         _sOpeningController = _slimeGo.GetComponent<SlimeOpeningSceneController>();
         AudioManager.Instance.PlayBGM("BGM_Title");
+        // セーブデータに「gameCleared」文字列が存在する場合、UIにcleared文字を表示する
+        if(PlayerPrefs.GetString("gameCleared") != null)
+        {
+            _cleardText.gameObject.SetActive(true);
+        }
     }
 
     

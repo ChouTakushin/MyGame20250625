@@ -576,6 +576,8 @@ public class GameMasterController : MonoBehaviour
 
     public IEnumerator DoFinish()
     {
+        // 奥義演出開始すると、文字列をキー名「gameCleared」でセーブデータに保存する
+        PlayerPrefs.SetString("gameCleared", "YES");
         Time.timeScale = 1f;
         _uiTextPressQ.gameObject.SetActive(false);
         _prevGameStatus = _gameStatus;

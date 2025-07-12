@@ -104,15 +104,7 @@ public class SlimeController : MonoBehaviour
 
     public void Death()
     {
-        //_rb.gravityScale = 1f;
-        //_rb.velocity = Vector3.zero;
-        //_rb.AddForce(_vDeathBlow, ForceMode2D.Impulse);
-        //_spriteRenderer.DOFade(0f, 0.5f).onComplete = () => { Destroy(gameObject); };
-        //StartCoroutine(DoFlash());
         _deathController.DoDeath();
-        //_animator.SetTrigger("T_Death");
-        //_pMovementController.GainMp(_killMp);
-        //_GameMasterController.CountEnemyKill(1);
     }
 
     public void DeathFromAnimator()

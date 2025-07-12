@@ -123,13 +123,6 @@ public class MushroomController : MonoBehaviour
 
     public void Death()
     {
-        //_isDead = true;
-        //_rb.velocity = Vector3.zero;
-        //DeactivateAttackCldr();
-        //AudioManager.Instance.PlaySE("SE_Enemy_Mushroom_Death");
-        //_animator.SetTrigger("T_Death");
-        //_pMovementController.GainMp(_killMp);
-        //_GameMasterController.CountEnemyKill(1);
         _deathController.DoDeath();
     }
 

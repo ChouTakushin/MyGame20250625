@@ -19,7 +19,7 @@ public class FlyEyeDeathController : EnemyDeathBehaviourBase
         _rb = GetComponent<Rigidbody2D>();
     }
 
-    public override void Doit()
+    public override void DoDeath()
     {
         _controller.IsDead = true;
         _rb.velocity = Vector2.zero;

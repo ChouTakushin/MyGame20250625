@@ -130,7 +130,7 @@ public class MushroomController : MonoBehaviour
         //_animator.SetTrigger("T_Death");
         //_pMovementController.GainMp(_killMp);
         //_GameMasterController.CountEnemyKill(1);
-        _deathController.Doit();
+        _deathController.DoDeath();
     }
 
     public void MeleeAreaIn()

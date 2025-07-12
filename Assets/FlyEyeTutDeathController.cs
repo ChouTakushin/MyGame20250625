@@ -23,10 +23,10 @@ public class FlyEyeTutDeathController : EnemyDeathBehaviourBase
     {
         if (transform.position.y > 6f || transform.position.y < -6 || transform.position.x > 12 || transform.position.x < -10)
         {
-            Doit();
+            DoDeath();
         }
     }
-    public override void Doit()
+    public override void DoDeath()
     {
         _controller.IsDead = true;
         _rb.velocity = Vector2.zero;

@@ -20,7 +20,7 @@ public class MushroomTutDeathController : EnemyDeathBehaviourBase
     }
 
 
-    public override void Doit()
+    public override void DoDeath()
     {
         _controller.IsDead = true;
         _rb.velocity = Vector3.zero;

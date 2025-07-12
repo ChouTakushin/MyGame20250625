@@ -17,7 +17,7 @@ public class WizardTutDeathController : EnemyDeathBehaviourBase
         _gameMasterController = GameObject.Find("GameMaster").GetComponent<GameMasterController>();
     }
 
-    public override void Doit()
+    public override void DoDeath()
     {
         _controller.IsDead = true;
         _animator.SetTrigger("T_Death");

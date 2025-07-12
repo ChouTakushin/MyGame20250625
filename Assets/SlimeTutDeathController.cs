@@ -17,7 +17,7 @@ public class SlimeTutDeathController : EnemyDeathBehaviourBase
         _pMovementController = GameObject.Find("Player").GetComponent<PlayerMovementController>();
         _gameMasterController = GameObject.Find("GameMaster").GetComponent<GameMasterController>();
     }
-    public override void Doit()
+    public override void DoDeath()
     {
         _animator.SetTrigger("T_Death");
         _pMovementController.GainMp(_controller.KillMp);

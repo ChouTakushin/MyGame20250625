@@ -18,14 +18,9 @@ public class SlimeDeathController : EnemyDeathBehaviourBase
         _pMovementController = GameObject.Find("Player").GetComponent<PlayerMovementController>();
         _gameMasterController = GameObject.Find("GameMaster").GetComponent<GameMasterController>();
     }
-    public override void Doit()
+    public override void DoDeath()
     {
         _animator.SetTrigger("T_Death");
-        //_rb.gravityScale = 1f;
-        //_rb.velocity = Vector3.zero;
-        //_rb.AddForce(_vDeathBlow, ForceMode2D.Impulse);
-        //_spriteRenderer.DOFade(0f, 0.5f).onComplete = () => { Destroy(gameObject); };
-        //StartCoroutine(DoFlash());
         _pMovementController.GainMp(_controller.KillMp);
         _gameMasterController.CountEnemyKill(1);
     }

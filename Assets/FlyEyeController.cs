@@ -111,7 +111,6 @@ public class FlyEyeController : MonoBehaviour
 
         if (collision.gameObject.tag == "PlayerAtkCldr")
         {
-            //StartCoroutine(DoFlash());
             AudioManager.Instance.PlaySE("SE_Player_Attack_Hit");
             Instantiate(_slashFx, transform.position + _vSlashFxOffset, Quaternion.identity);
             Death();
@@ -167,15 +166,7 @@ public class FlyEyeController : MonoBehaviour
 
     public void Death()
     {
-        //_isDead = true;
-        //_rb.velocity = Vector2.zero;
-        //_rb.gravityScale = 1f;
-        //_rb.velocity = _vHitBack;
-        //_animator.SetTrigger("T_Death");
-        //_pMovementController.GainMp(_killMp);
-        //_GameMasterController.CountEnemyKill(1);
-        //AudioManager.Instance.PlaySE("SE_Enemy_FlyEye_Death");
-        _deathController.Doit();
+        _deathController.DoDeath();
     }
     IEnumerator DoFlash()
     {

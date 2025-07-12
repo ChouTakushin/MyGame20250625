@@ -22,7 +22,7 @@ public class SkeletonDeathController : EnemyDeathBehaviourBase
     {
         
     }
-    public override void Doit()
+    public override void DoDeath()
     {
         AudioManager.Instance.PlaySE("SE_Enemy_Skeleton_Death");
         _controller.IsDead = true;

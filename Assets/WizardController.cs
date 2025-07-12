@@ -112,12 +112,7 @@ public class WizardController : MonoBehaviour
     }
     public void Death()
     {
-        //_isDead = true;
-        //_animator.SetTrigger("T_Death");
-        //_pMovementController.GainMp(_killMp);
-        //_GameMasterController.CountEnemyKill(1);
-        //AudioManager.Instance.PlaySE("SE_Enemy_Wizard_Death");
-        _deathController.Doit();
+        _deathController.DoDeath();
     }
     public void GenerateTeleportFx()
     {

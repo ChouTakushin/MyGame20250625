@@ -218,12 +218,7 @@ public class SkeletonController : MonoBehaviour
 
     public void Death()
     {
-        //AudioManager.Instance.PlaySE("SE_Enemy_Skeleton_Death");
-        //_isDead = true;
-        //_animator.SetTrigger("T_Death");
-        //_pMovementController.GainMp(_killMp);
-        //_GameMasterController.CountEnemyKill(1);
-        _deathController.Doit();
+        _deathController.DoDeath();
     }
     public void SkeletonFadeOut()
     {

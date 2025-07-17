@@ -473,13 +473,18 @@ public class GameMasterController : MonoBehaviour
         _enemyGeneratorController.CanSpawn = false;
     }
 
+    /// <summary>
+    /// ‰æ–Êã‚Ì“G‚ğ‘S–Å‚³‚¹A’e‚ğÁ‚·
+    /// </summary>
     public void ClearEnemies()
     {
+        // “G‚ÌAnimation‘¬“x‚ğ–ß‚µA€–Sˆ—‚ğŒÄ‚Ño‚·
         foreach (GameObject go in GameObject.FindGameObjectsWithTag("Enemy"))
         {
-            go.GetComponent<Animator>().Play("Death");
             go.GetComponent<Animator>().speed = 1f;
+            go.GetComponent<EnemyDeathBehaviourBase>().DoDeath();
         }
+        // ‰æ–Êã‚Ì“G’e‚ğÁ‚·
         foreach (GameObject go in GameObject.FindGameObjectsWithTag("EnemyProjectile"))
         {
             Destroy(go);
